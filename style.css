@@ -9,8 +9,8 @@
 body {
     margin: 0;
     line-height: 1.5;
-    color: rgb(145, 143, 143);
-    background-color: rgb(255, 248, 248)
+    background-color: #F0F0F0;
+    font-family: 'Lexend';
 }
 header{
     height: 350px;
@@ -36,7 +36,7 @@ header .logo img{
     height: 30px; /* Hauteur de l'input */
     margin-left: 1.5rem;
     border-radius: 1rem;
-    background-image: url(../test/images/Loupe.png); 
+    background-image: url(../1er-projet/images/Loupe.png); 
     background-size: 20px 20px; /* Taille de l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-position: 5px center; /* Positionnement de l'image à gauche et centré verticalement */
@@ -60,7 +60,8 @@ main{
 .img-left h3{
     margin-top: 0;
     margin-left: 15%;
-    color: rgb(145, 143, 143);
+    color: black;
+    font-weight: normal;
 }
 .texte{ 
     width: 40%;
