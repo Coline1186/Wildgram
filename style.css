@@ -40,28 +40,29 @@ header .logo img{
     background-size: 20px 20px; /* Taille de l'image */
     background-repeat: no-repeat; /* Empêche la répétition de l'image */
     background-position: 5px center; /* Positionnement de l'image à gauche et centré verticalement */
-    border: 1px #ccc; /* Bordure de l'input */
+    border: 2px solid #ccc; /* Bordure de l'input */
     background-color: #ebe9e9;   
 }
 main{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-start; */
 }
 .img-left{
     border-right: 2px solid #ccc;
     width: 250px;
 }
 .img-left img{
-    margin-left: 15%;
+    margin-left: 40%;
     max-width: 20%;
     margin-top: 20%;
 }
 .img-left h3{
+    display: flex;
     margin-top: 0;
-    margin-left: 15%;
     color: black;
     font-weight: normal;
+    justify-content: center;
 }
 .texte{ 
     width: 40%;
