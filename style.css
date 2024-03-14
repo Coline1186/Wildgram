@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /*! background-color: burlywood; */
 }
 :root{
     --main-color:
@@ -12,8 +11,11 @@ body {
     background-color: #F0F0F0;
     font-family: 'Lexend';
 }
+main{
+    margin-left: 23%;
+}
 .side-nav{
-    width: 250px;
+    width: 15rem;
     height: 100%;
     background-color: #F0F0F0;
     position: fixed;
@@ -25,10 +27,10 @@ body {
 header .logo{
     display: block; 
     margin-bottom: 25%;
-    width: 150px;
+    width: 70%;
 }
 #searchbar{ 
-    height: 30px; /*Hauteur de l'input*/
+    height: 1.87rem; /*Hauteur de l'input*/
     width: 100%;
     margin-bottom: 15%;
     border-radius: 1rem;
@@ -51,21 +53,22 @@ header .logo{
     align-items: center;
 }
 .nav-links img{
-    max-width: 65%;
+    max-width: 55%;
+    margin-top: 0.5rem;
 }
 .nav-links p{
-    padding-right: 14px;
+    padding-right: 1.8rem;
     margin: 0;
 }
-/* main{
-    position: fixed;
-    left: 30%;
-    display: flex;
-} */
 .entete-profil{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 3%;
+    background-image: linear-gradient(to right, transparent calc(1px), #ccc, transparent calc(70% + 1px)); /* Crée une ligne grise centrée */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    background-position: bottom; /* Positionne l'image de fond au bas de l'élément */
+    background-size: 70% 2px; /* Taille de la ligne (largeur: 70%, hauteur: 2px) */
 }
 .entete-profil img{
     width: 163px;
@@ -75,36 +78,24 @@ header .logo{
 }
 .texte{ 
     width: 40%;
-    margin-left: 7%;
     margin-bottom: 5%;
 }
 .texte h1{
-    display: flex;
-    flex-direction: column;
     color: black;
     margin-top: 0;
     margin-bottom: 2%;
-    margin-left: 20%;
     font-size: 2rem;
     font-weight: 50;
 }
 .texte p{
-    display: flex;
-    flex-direction: column;
     color: black;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 20%;
     font-size: 1rem;
     font-weight: 100;
 }
 .texte h2{
-    display: flex;
-    flex-direction: column;
     color: black;
-    margin-top: 0;
-    margin-bottom: 2%;
-    margin-left: 20%;
     font-size: 0.8rem;
     font-weight: 900;
 }
@@ -114,13 +105,24 @@ header .logo{
     margin-left: 7%;
     margin-bottom: 5%;
 }
-.droite img{
-    max-width: 30%;
-    height: 10%;
-}
 .droite h1{
-    color: black;
-    border-bottom: 2px solid #ccc;
-    font-size: 1rem;
     font-weight: 100;
+    background-image: linear-gradient(to right, transparent calc(1px), #ccc, transparent calc(60% + 1px)); /* Crée une ligne grise centrée */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
+    background-position: bottom; /* Positionne l'image de fond au bas de l'élément */
+    background-size: 150% 2px; /* Taille de la ligne (largeur: 70%, hauteur: 2px) */    font-size: 1rem;
+}
+.droite .icones img{
+    max-width: 10%;
+    height: 0%;
+}
+.droite .icones{
+    display: flex;
+    margin: 0;
+}
+.droite .icones p{
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-left: 10%;
+    margin-top:1%;
 }
