@@ -24,13 +24,11 @@ body {
 }
 header .logo{
     display: block; 
-    margin-bottom: 25%;
+    margin-bottom: 30%;
     width: 150px;
 }
 #searchbar{ 
     height: 30px; /*Hauteur de l'input*/
-    width: 100%;
-    margin-bottom: 15%;
     border-radius: 1rem;
     background-image: url(../1er-projet/images/Loupe.png); 
     background-size: 20px 20px; /*Taille de l'image */
@@ -45,33 +43,66 @@ header .logo{
     padding-left: 0;
 }
 .nav-links li{
-    display: flex;
     padding: 10px 0;
-    flex-direction: column;
+}
+.nav-links a{
+    padding: 10px 14px;
+    display: flex;
     align-items: center;
 }
 .nav-links img{
-    max-width: 65%;
+        max-width: 20%;
+
 }
 .nav-links p{
-    padding-right: 14px;
+    padding: 0px 14px;
+    display: flex;
+    align-items: center;
     margin: 0;
 }
-/* main{
-    position: fixed;
-    left: 30%;
-    display: flex;
-} */
 .entete-profil{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 50px;
 }
 .entete-profil img{
     width: 163px;
     height: 161px;
     border-radius: 1000px;
     margin-bottom: 5%;
+}
+.img-left #searchbar{ */
+    /* height: 30px; Hauteur de l'input
+    margin-left: 1.5rem;
+    border-radius: 1rem;
+    background-image: url(../1er-projet/images/Loupe.png);  */
+    /* background-size: 20px 20px; Taille de l'image */
+    /* background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    /* background-position: 5px center; /* Positionnement de l'image à gauche et centré verticalement */
+    /* border: 2px solid #ccc; Bordure de l'input */
+    /* background-color: #ebe9e9;    
+}
+main{ 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+}
+.img-left{
+    border-right: 2px solid #ccc;
+    width: 250px;
+}
+.img-left img{
+    margin-left: 40%;
+    max-width: 20%;
+    margin-top: 20%;
+}
+.img-left h3{
+    display: flex;
+    margin-top: 0;
+    color: black;
+    font-weight: normal;
+    justify-content: center;
 }
 .texte{ 
     width: 40%;
@@ -124,3 +155,7 @@ header .logo{
     font-size: 1rem;
     font-weight: 100;
 }
+.publications img{
+    width: 30%;
+    margin-left: 10%;
+} */
