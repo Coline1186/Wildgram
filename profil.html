@@ -3,27 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" >
+    <link href="profil.css" rel="stylesheet" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <!-- <link href="mobile.css" rel="stylesheet" media="screen and (max-width: 992px)" > -->
+    <link href="profil-mobile.css" rel="stylesheet" media="screen and (max-width: 480px)" >
     <title>News Feed</title>
 </head>
 <body>
-    <header>           
-         <div class="side-nav">
+    <header>   
+        <div class="header-responsive">
             <img src="../1er-projet/images/Logo-removebg-preview.png" alt="Logo" class="logo">
-            <ul class="nav-links">
-                <input id="searchbar">
-                <li><a href=""><img src="../1er-projet/images/more.png" alt="ADD"></a><p>ADD</p></li>
-                <li><a href=""><img src="../1er-projet/images/cloche.png" alt="NOTIFICATIONS"></a><p>NOTIFICATIONS</p></li>
-                <li><a href=""><img src="../1er-projet/images/messenger.png" alt="MESSAGES"></a><p>MESSAGES</p></li>
-                <li><a href=""><img src="../1er-projet/images/user(1).png" alt="PROFIL"></a><p>PROFIL</p></li>
-                <li><a href=""><img src="../1er-projet/images/settings.png" alt="PARAMETRES"></a><p>PARAMETRES</p></li>
-            </ul>
+            <input id="searchbar" placeholder="🔍 Rechercher">
+        </div>
+        <div class="logo-responsive">
+            <li><a href=""><img src="../1er-projet/images/settings.png" alt="PARAMETRES"></a><p>PARAMETRES</p></li>
         </div>
     </header>
+    <nav class="side-nav">
+        <ul class="nav-links">
+            <li><a href=""><img src="../1er-projet/images/more.png" alt="ADD"></a><p>ADD</p></li>
+            <li><a href=""><img src="../1er-projet/images/cloche.png" alt="NOTIFICATIONS"></a><p>NOTIFICATIONS</p></li>
+            <li><a href=""><img src="../1er-projet/images/messenger.png" alt="MESSAGES"></a><p>MESSAGES</p></li>
+            <li><a href=""><img src="../1er-projet/images/user(1).png" alt="PROFIL"></a><p>PROFIL</p></li>
+            <li class="logo-responsive"><a href=""><img src="../1er-projet/images/settings.png" alt="PARAMETRES"></a><p>PARAMETRES</p></li>
+            <li class="loupe-responsive"><a href=""><img src="../1er-projet/images/loupe rose.png" alt="LOUPE"></a><p>RECHERCHER</p></li>
+        </ul>
+    </nav>
     <main>
         <div class="entete-profil">
             <img src="../1er-projet/images/A3606B48-1E07-44C5-92C8-890064DB64BB_1_105_c.jpeg" alt="photo de profil">
@@ -41,9 +47,9 @@
                 <div class="icones"><img src="../1er-projet/images/3ème en Kahoot.png" alt="3ème au Kahoot"><p>3ème au Kahoot</p></a></div>
             </div>
     </div>
+    
     </main>
 
-          
-     
+              
 </body>
 </html>
