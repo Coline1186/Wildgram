@@ -12,6 +12,8 @@ body {
     font-family: 'Lexend';
 }
 main{
+    display: flex;
+    flex-direction: column;
     margin-left: 23%;
 }
 header{
@@ -40,7 +42,6 @@ header #searchbar{
 .side-nav{
     width: 15rem;
     height: 100%;
-    background-color: #F0F0F0;
     position: fixed;
     top: 20%;
     left: 0;
@@ -129,4 +130,9 @@ main .droite .icones p{
     font-weight: 200;
     margin-left: 10%;
     margin-top:1%;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7%;
 }
