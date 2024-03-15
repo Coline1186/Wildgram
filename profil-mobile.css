@@ -1,15 +1,16 @@
 header .logo{
+    position: absolute;
     width: 20%;
     margin-left: 40%;
     top:0;
     
 }
 header .param-responsive{
-    position: fixed;
+    margin-left: 80%;
     right: 0;
     display: block;
     list-style: none;
-    margin-top: 5%;
+    margin-top: 11%;
 }
 header .param-responsive img{
     max-width: 60%;
@@ -21,7 +22,7 @@ main{
    margin: 2%;  
 }
 main .entete-profil{
-    margin-top: 15%;
+    margin-top: 5%;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
     background-image: none;
