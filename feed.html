@@ -4,46 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/21e4260acd.js" crossorigin="anonymous"></script>
+    <link href="feed.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)">
+    <link rel="stylesheet" href="mobilefeed.css" media="screen and (max-width: 992px)">
     <title>News Feed</title>
 </head>
 
 <body>
     <header>
-
-        <div class="main">
-            <div class="side-nav">
-                <img src="c:\Users\USER\Desktop\images\Logo-removebg-preview.png" alt="Logo" class="logo">
-                <ul class="nav-links">
-                    <li><a href=""><img src="c:\Users\USER\Desktop\images\Plus.png" alt="ADD"></a>
-                        <p>ADD</p>
-                    </li>
-                    <li><a href=""><img src="c:\Users\USER\Desktop\images\cloche.png" alt="NOTIFICATIONS"></a>
-                        <p>NOTIFICATIONS</p>
-                    </li>
-                    <li><a href=""><img src="c:\Users\USER\Desktop\images\messenger.png" alt="MESSAGES"></a>
-                        <p>MESSAGES</p>
-                    </li>
-                    <li><a href=""><img src="c:\Users\USER\Desktop\images\user(1).png" alt="PROFIL"></a>
-                        <p>PROFIL</p>
-                    </li>
-                    <li><a href=""><img src="c:\Users\USER\Desktop\images\settings.png" alt="PARAMETRES"></a>
-                        <p>PARAMETRES</p>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="side-nav">
+            <img src="images/Logo-removebg-preview.png" alt="Logo" class="logo">
+        </div> 
+        <input type="searchbar" placeholder="🔍 Rechercher">
+        <div class="param-responsive">
+            <li><a href=""><img src="images/settings.png" alt="PARAMETRES"></a><p>PARAMETRES</p></li>
+        </div>
     </header>
+        <nav class="main">
+            <ul class="nav-links">
+                 <li><a href="file:///Users/coline/Desktop/Wild%20code%20School/1er-projet/profil.html"><img src="../1er-projet/images/user(1).png" alt="PROFIL"></a>
+                    <p>PROFIL</p>
+                </li>
+                <li><a href=""><img src="images/more.png" alt="ADD"></a>
+                    <p>ADD</p>
+                </li>
+                <li><a href=""><img src="../1er-projet/images/cloche.png" alt="NOTIFICATIONS"></a>
+                    <p>NOTIFICATIONS</p>
+                </li>
+                <li><a href=""><img src="../1er-projet/images/messenger.png" alt="MESSAGES"></a>
+                    <p>MESSAGES</p>
+                </li>
+                <li class="param-responsive"><a href=""><img src="../1er-projet/images/settings.png" alt="PARAMETRES"></a>
+                    <p>PARAMETRES</p>
+                </li>
+                <li class="loupe-responsive"><a href=""><img src="../1er-projet/images/loupe rose.png" alt="LOUPE"></a>
+                    <p>RECHERCHER</p>
+                </li>
+            </ul>    
+        </nav>
+    <main>
+<div class="feed">
+    <div class="bloc">
+    <span><img src="assets-projet-wild-gram/avatar-utilisateurs/avatar 7.jpg" alt="Antoine"><h2>Antoine Delalande</h2></span>
+    <img src="assets-projet-wild-gram/publi-antoine.jpeg" alt="Publi d'Antoine">
+    <div id="card-icons">
+        <i class="fa-regular fa-heart"></i>
+        <!-- <i class="fa-solid fa-heart icons like_" onclick="heartBtn()"></i> -->
+        <!-- <img src="assets-projet-wild-gram/Incons flavicon/heart.png"  onclick="heartBtn()" class="icons  like" > -->
+        <i class="fa-regular fa-comment"></i>
+        <!-- <img src="assets-projet-wild-gram/Incons flavicon/speech-bubble.png" class="icons"> -->
+        <i class="fa-regular fa-paper-plane"></i>
+        <!-- <img src="assets-projet-wild-gram/Incons flavicon/send.png" class="icons"> -->
+    </div>
+    <div class="txt">
+        <p class="like-txt">Aimé par Yann et 3 autres personnes</p>
+        <p class="description">Live laugh love #live</p>
+    </div>
+    <form id="form" action="">
+        <input class="input-txt" type="text"
+        placeholder="Ecris ton commentaire"
+        value="">
+        <input class="input-send" type="submit" value="Envoyer" id="">
+    </form>
+    <ul class="list">
+        <li>
+    
+        </li>
+    </ul>
+    </div>
 
-
-
-<div> <input type="searchbar"></div>
-   
-
+    <div class="bloc">
+        <span><img src="assets-projet-wild-gram/avatar-utilisateurs/avatar 8.jpeg" alt="Brian"><h2>Brian Boudrioux</h2></span>
+        <video controls src="assets-projet-wild-gram/RPReplay_Final1710693436.mov"></video>
+        <div id="card-icons">
+            <i class="fa-regular fa-heart"></i>
+            <!-- <i class="fa-solid fa-heart icons like_" onclick="heartBtn()"></i> -->
+            <!-- <img src="assets-projet-wild-gram/Incons flavicon/heart.png"  onclick="heartBtn()" class="icons  like" > -->
+            <i class="fa-regular fa-comment"></i>
+            <!-- <img src="assets-projet-wild-gram/Incons flavicon/speech-bubble.png" class="icons"> -->
+            <i class="fa-regular fa-paper-plane"></i>
+            <!-- <img src="assets-projet-wild-gram/Incons flavicon/send.png" class="icons"> -->
+        </div>
+        <div class="txt">
+            <p class="like-txt">Aimé par Yann et 3 autres personnes</p>
+            <p class="description">Live laugh love #live</p>
+        </div>
+        <form id="form" action="">
+            <input class="input-txt" type="text"
+            placeholder="Ecris ton commentaire"
+            value="">
+            <input class="input-send" type="submit" value="Envoyer" id="">
+        </form>
+        <ul class="list">
+            <li>
+        
+            </li>
+        </ul>
+    </div>
+    <div class="bloc">
+        <span><img src="assets-projet-wild-gram/avatar-utilisateurs/avatar 10.jpeg" alt="Manue"><h2>Emmanuelle Curiant</h2></span>
+        <img src="assets-projet-wild-gram/publi-manue.jpeg" alt="">
+        <div id="card-icons">
+            <i class="fa-regular fa-heart"></i>
+            <!-- <i class="fa-solid fa-heart icons like_" onclick="heartBtn()"></i> -->
+            <!-- <img src="assets-projet-wild-gram/Incons flavicon/heart.png"  onclick="heartBtn()" class="icons  like" > -->
+            <i class="fa-regular fa-comment"></i>
+            <!-- <img src="assets-projet-wild-gram/Incons flavicon/speech-bubble.png" class="icons"> -->
+            <i class="fa-regular fa-paper-plane"></i>
+            <!-- <img src="assets-projet-wild-gram/Incons flavicon/send.png" class="icons"> -->
+        </div>
+        <div class="txt">
+            <p class="like-txt">Aimé par Yann et 3 autres personnes</p>
+            <p class="description">Live laugh love #live</p>
+        </div>
+        <form id="form" action="">
+            <input class="input-txt" type="text"
+            placeholder="Ecris ton commentaire"
+            value="">
+            <input class="input-send" type="submit" value="Envoyer" id="">
+        </form>
+        <ul class="list">
+            <li>
+        
+            </li>
+        </ul>
+    </div>
+</div>
+  
+    <section>
     <div class="suggestions-bar">
        
         <div>
@@ -52,13 +143,13 @@
 
         <div>
             <a href="">
-                <img src="c:\Users\USER\Desktop\images\01 1.png" alt="">
+                <img src="../1er-projet/assets-projet-wild-gram/avatar-utilisateurs/avatar 1.jpg" alt="">
             </a>
             <p><b>Linda </b>et vous avez 2 ami(e)s en commun.</p>
         </div>
         <div>
             <a href="">
-                <img src="c:\Users\USER\Desktop\images\profile-picture 1.png" alt="">
+                <img src="../1er-projet/assets-projet-wild-gram/avatar-utilisateurs/avatar2.webp" alt="">
             </a>
             <p> <b>Maxence </b>et vous avez 2 ami(e)s en commun.</p>
         </div>
@@ -101,12 +192,12 @@
             </a>
             <p><b>Amandine </b>et vous avez 1 ami(e) en commun.</p>
         </div>
-
     </div>
 
-    </div>
+    </section>
 
-
+</main>
+<script src="card.js"></script>
 </body>
 
 </html>

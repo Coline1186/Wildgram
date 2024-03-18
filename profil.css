@@ -2,13 +2,13 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color:
-    --second-color: 
+    --main-color: #F0F0F0;
+    --second-color: #D141CB;
 }
 body {
     margin: 0;
     line-height: 1.5;
-    background-color: #F0F0F0;
+    background-color: var(--main-color);
     font-family: 'Lexend';
 }
 main{
@@ -45,8 +45,10 @@ header #searchbar{
     position: fixed;
     top: 20%;
     left: 0;
-    padding: 0px 30px;
     border-right: 2px solid #ccc;
+}
+ul.nav-links{
+    padding-left: 0;
 }
 .nav-links li{
     display: flex;
