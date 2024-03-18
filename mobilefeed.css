@@ -1,0 +1,81 @@
+.suggestions-bar{
+    display: none;
+}
+input{
+    display:none;
+}
+header{
+    display: block;
+    border-bottom: 2px solid #ccc;
+}
+header .logo{
+    position: absolute;
+    width: 20%;
+    margin-left: 40%;
+    top:0;
+}
+header .param-responsive{
+    margin-left: 80%;
+    right: 0;
+    display: block;
+    list-style: none;
+    margin-top: 11%;
+}
+header .param-responsive img{
+    max-width: 60%;
+}
+header .param-responsive p{
+    display: none;
+}
+main{
+   margin: 2%;  
+}
+.bloc img {
+    margin-left: 20%;
+    height: 300px;
+}
+.bloc video{
+    margin-left: 20%;
+    height: 300px;
+}
+.feed{
+    margin: 0;
+}
+.main{
+    width: 100%; /* Ajustement de la largeur pour occuper tout l'écran */
+    height: 10%; /* Hauteur automatique */
+    bottom: 0; /* Placer la barre latérale en bas de la fenêtre */
+    top: auto; /* Réinitialiser la position en haut */
+    padding: 15px; /* Réduire le padding pour plus d'espace */
+}
+.nav-links p{
+    display: none;
+}
+.main .param-responsive{
+    display: none;
+}
+.nav-links .loupe-responsive{
+    display: block;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row; /* Afficher les liens horizontalement */
+    justify-content: space-around;
+}
+ul.nav-links{
+    margin: 0;
+    padding-left:5%;
+}
+.nav-links li {
+    margin-right: 15px; /* Ajouter un peu d'espace entre les liens */
+}
+body{
+    margin-bottom: 20%;
+}
+nav.main{
+    display: block;
+    padding-top:5%;
+    background-color: #ccc;
+}
+
+
