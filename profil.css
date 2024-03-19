@@ -183,7 +183,7 @@ main {
 }
 
 .img-container {
-    object-fit: cover;
+    /* object-fit: cover; */
     width: 230px;
     height: 230px;
 }
@@ -250,4 +250,9 @@ section{
     display: flex;
     justify-content: space-between;
     margin-right: 7%;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
 }
