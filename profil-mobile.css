@@ -85,3 +85,8 @@ main .droite .icones p{
 .nav-links li {
     margin-right: 15px; /* Ajouter un peu d'espace entre les liens */
 }
+img-container {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
