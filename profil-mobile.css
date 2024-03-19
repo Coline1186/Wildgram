@@ -1,21 +1,69 @@
-header .header-responsive {
-    display: flex;
+header .logo{
+    position: absolute;
+    width: 20%;
+    margin-left: 40%;
+    top:0;
 }
-header .logo-responsive{
+header .param-responsive{
+    margin-left: 80%;
+    right: 0;
     display: block;
-    display: flex;
     list-style: none;
+    margin-top: 11%;
 }
-header .logo-responsive p{
+header .param-responsive img{
+    max-width: 60%;
+}
+header .param-responsive p{
+    display: none;
+}
+main{
+   margin: 2%;  
+}
+main .entete-profil{
+    margin-top: 5%;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    background-image: none;
+}
+main .entete-profil h1{
+    font-size: 1.3rem
+}
+main .entete-profil img{
+    width: 63px;
+    height: 61px;
+}
+main .entete-profil .texte p{
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+main .entete-profil h2{
+    font-size: 0.6rem;
+    font-weight: 900;
+}
+main .droite h1{
+    font-size: 0.8rem;
+    margin-top: 0;
+}
+main .droite .icones{
+    display: flex;
+    justify-content: space-evenly;   
+}
+main .droite .icones img{
+    max-width: 25%;
+    height: 0%;
+}
+main .droite .icones p{
     display: none;
 }
 .side-nav {
     width: 100%; /* Ajustement de la largeur pour occuper tout l'écran */
-    height: auto; /* Hauteur automatique */
+    height: 10%; /* Hauteur automatique */
     bottom: 0; /* Placer la barre latérale en bas de la fenêtre */
     top: auto; /* Réinitialiser la position en haut */
-    padding: 15px; /* Réduire le padding pour plus d'espace */
-    border-right: none; /* Supprimer la bordure droite */
+    display: block;
+    background-color: #ccc;
+    padding-left: 5%;
 }
 .nav-links p{
     display: none;
@@ -23,7 +71,7 @@ header .logo-responsive p{
 #searchbar{
     display: none;
 }
-.side-nav .logo-responsive{
+.side-nav .param-responsive{
     display: none;
 }
 .nav-links .loupe-responsive{

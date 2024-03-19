@@ -2,59 +2,63 @@
     box-sizing: border-box;
 }
 :root{
-    --main-color:
-    --second-color: 
+    --main-color: #F0F0F0;
+    --second-color: #D141CB;
 }
 body {
     margin: 0;
     line-height: 1.5;
-    background-color: #F0F0F0;
+    background-color: var(--main-color);
     font-family: 'Lexend';
 }
 main{
+    display: flex;
+    flex-direction: column;
     margin-left: 23%;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
 }
 header .logo{
     position: fixed;
     top: 2%;
+    left: 0;
     display: block; 
     width: 10%;
     margin-left: 3%;
 }
-header .logo-responsive{
+header .param-responsive{
     display: none;
 }
-.header-responsive #searchbar{ 
+header #searchbar{ 
     height: 1.87rem; /*Hauteur de l'input*/
     width: 50%;
     border-radius: 1rem;
     border: 2px solid #ccc; /*Bordure de l'input */
     background-color: #ebe9e9;    
-    display: flex; 
 } 
 .side-nav{
     width: 15rem;
     height: 100%;
-    background-color: #F0F0F0;
     position: fixed;
     top: 20%;
     left: 0;
-    padding: 0px 30px;
     border-right: 2px solid #ccc;
 }
-.nav-links{
-    list-style: none;
-    position: relative;
+ul.nav-links{
     padding-left: 0;
+    margin-top: auto;
 }
-.nav-links li, .logo-responsive{
+.nav-links li{
     display: flex;
     padding: 10px 0;
     flex-direction: column;
     align-items: center;
 }
 .nav-links img{
-    max-width: 55%;
+    max-width: 50%;
     margin-top: 0.5rem;
 }
 .nav-links p{
@@ -68,7 +72,7 @@ main .entete-profil{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top:10%;
+    margin-top:3%;
     background-image: linear-gradient(to right, transparent calc(1px), #ccc, transparent calc(70% + 1px)); /* Crée une ligne grise centrée */
     background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
     background-position: bottom; /* Positionne l'image de fond au bas de l'élément */
@@ -129,4 +133,9 @@ main .droite .icones p{
     font-weight: 200;
     margin-left: 10%;
     margin-top:1%;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7%;
 }
