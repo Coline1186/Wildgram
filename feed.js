@@ -31,17 +31,63 @@ const cardFeed = [
         likeTxt: "Aimé par Yann et 3 autres personnes",
         description: "Live laugh love #live",
         id: 3,
-    }
+    },
+    {
+        avatar: "assets-projet-wild-gram/avatar-utilisateurs/avatar 6.jpg",
+        userName: "Alexandre Renard",
+        img: "assets-projet-wild-gram/publication-alex.jpeg",
+        heartIcon: "fa-regular fa-heart",
+        commentIcon: "fa-regular fa-comment",
+        sendIcon: "fa-regular fa-paper-plane",
+        likeTxt: "Aimé par Yann et 3 autres personnes",
+        description: "What is a programmer ?",
+        id: 4,
+    },
+    {
+        avatar: "assets-projet-wild-gram/avatar-utilisateurs/avatar 9.jpg",
+        userName: "Ludovic Scelles",
+        video: "assets-projet-wild-gram/publication-ludo.mov",
+        heartIcon: "fa-regular fa-heart",
+        commentIcon: "fa-regular fa-comment",
+        sendIcon: "fa-regular fa-paper-plane",
+        likeTxt: "Aimé par Yann et 3 autres personnes",
+        description: "Weirdness of programming",
+        id: 5,
+    },
+    {
+        avatar: "assets-projet-wild-gram/avatar-utilisateurs/avatar 11.jpg",
+        userName: "Mickaël Lambert",
+        img: "assets-projet-wild-gram/publi-mikael.jpeg",
+        heartIcon: "fa-regular fa-heart",
+        commentIcon: "fa-regular fa-comment",
+        sendIcon: "fa-regular fa-paper-plane",
+        likeTxt: "Aimé par Yann et 3 autres personnes",
+        description: "Tidus à la plage",
+        id: 6,
+    },
+    {
+        avatar: "assets-projet-wild-gram/avatar-utilisateurs/avatar 12.jpg",
+        userName: "Vincent Cantonnet",
+        video: "assets-projet-wild-gram/publi-vincent.mov",
+        heartIcon: "fa-regular fa-heart",
+        commentIcon: "fa-regular fa-comment",
+        sendIcon: "fa-regular fa-paper-plane",
+        likeTxt: "Aimé par Yann et 3 autres personnes",
+        description: "If you are a teacher tired, you are note alone",
+        id: 7,
+    },
 ];
 
 const feedCopy = () => {
 
     for (const object of cardFeed) {
     const cardList = document.querySelector(".card-list");
+
     
     const cardContainer = document.createElement("div");
     cardContainer.classList.add("card-container");
     cardList.appendChild(cardContainer);
+
 
     const cardHead = document.createElement("span");
     cardHead.classList.add("card-head");
@@ -136,7 +182,6 @@ const feedCopy = () => {
     const commentTxt = document.createElement("li");
     commentList.appendChild(commentTxt);        
     }
-
     handleFeedEvent();
 };
 
