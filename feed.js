@@ -6,7 +6,7 @@ const cardFeed = [
         heartIcon: "fa-regular fa-heart",
         commentIcon: "fa-regular fa-comment",
         sendIcon: "fa-regular fa-paper-plane",
-        likeTxt: "Aimé par Yann et 3 autres personnes",
+        likes: 5,     // supression du like-txt puis ajout de likes avec le nombre de likes existants par carte à ajouter au like txt
         description: "Live laugh love #live",
         id: 1,
     },
@@ -17,7 +17,7 @@ const cardFeed = [
         heartIcon: "fa-regular fa-heart",
         commentIcon: "fa-regular fa-comment",
         sendIcon: "fa-regular fa-paper-plane",
-        likeTxt: "Aimé par Yann et 3 autres personnes",
+        likes: 3,
         description: "Live laugh love #live",
         id: 2,
     },
@@ -28,7 +28,7 @@ const cardFeed = [
         heartIcon: "fa-regular fa-heart",
         commentIcon: "fa-regular fa-comment",
         sendIcon: "fa-regular fa-paper-plane",
-        likeTxt: "Aimé par Yann et 3 autres personnes",
+        likes: 7,
         description: "Live laugh love #live",
         id: 3,
     },
@@ -39,7 +39,7 @@ const cardFeed = [
         heartIcon: "fa-regular fa-heart",
         commentIcon: "fa-regular fa-comment",
         sendIcon: "fa-regular fa-paper-plane",
-        likeTxt: "Aimé par Yann et 3 autres personnes",
+        likes: 2,
         description: "What is a programmer ?",
         id: 4,
     },
@@ -50,7 +50,7 @@ const cardFeed = [
         heartIcon: "fa-regular fa-heart",
         commentIcon: "fa-regular fa-comment",
         sendIcon: "fa-regular fa-paper-plane",
-        likeTxt: "Aimé par Yann et 3 autres personnes",
+        likes: 9,
         description: "Weirdness of programming",
         id: 5,
     },
@@ -61,7 +61,7 @@ const cardFeed = [
         heartIcon: "fa-regular fa-heart",
         commentIcon: "fa-regular fa-comment",
         sendIcon: "fa-regular fa-paper-plane",
-        likeTxt: "Aimé par Yann et 3 autres personnes",
+        likes: 15,
         description: "Tidus à la plage",
         id: 6,
     },
@@ -72,11 +72,13 @@ const cardFeed = [
         heartIcon: "fa-regular fa-heart",
         commentIcon: "fa-regular fa-comment",
         sendIcon: "fa-regular fa-paper-plane",
-        likeTxt: "Aimé par Yann et 3 autres personnes",
+        likes: 3,
         description: "If you are a teacher tired, you are note alone",
         id: 7,
     },
 ];
+const names = ['Raphael', 'Léa', 'Yazid', 'Alexandre', 'Vincent', 'Erwan', 'Mika', 'Yann', 'Paul', 'Mathilde', 'Lucie', 'Mewen', 'Aude', 'Emmanuelle', 'Tidus', 'Michaël']
+
 
 const feedCopy = () => {
 
@@ -132,6 +134,8 @@ const feedCopy = () => {
     const heartIcon = document.createElement("i");
     heartIcon.classList.add("fa-regular");
     heartIcon.classList.add("fa-heart");
+    heartIcon.setAttribute("data-nb-likes", object.likes),
+    // on crée un nouvel attribut dans notre balise heart qui permet de récuprer le nombre de likes (depuis le tableau d'objet) existant sur chaque carte et qui a pour nom 'data-nb-likes'
     cardIcons.appendChild(heartIcon);
 
     const commentIcon = document.createElement("i");
@@ -150,8 +154,12 @@ const feedCopy = () => {
 
     const likeTxt = document.createElement("p");
     likeTxt.classList.add("like-txt");
-    likeTxt.innerHTML = object.likeTxt
+    const name = names[Math.floor(Math.random() * names.length)];
+    // afin d'utiliser le tableau de prénoms on génére aléatoirement un nombre que renvoie un index différent pour chaque carte 
+    likeTxt.innerHTML = `Aimé par ${name} et <span class="nb-likes">${object.likes}</span> autre(s) personne(s)`;
+    // Après avoir récupéré le nombre de likes existants puis généré des prénoms différents par carte on utilise innerHtml pour remplacer le contenue de l'élément. On utilse la méthode des backtik afin de réécrire notre liketxt (supprimé de notre objet)  avec le bon nom et nombre de likes selon chaque carte. On place bien le nombre de likes dans une nouvelle balise span à l'intérieur du <p> afin d'avoir accès au nombre et pouvoir ajouter ou enlever 1
     text.appendChild(likeTxt);
+
 
     const description = document.createElement("p");
     description.classList.add("description");
@@ -190,7 +198,24 @@ const handleFeedEvent = () => {
   
     for (const heart of allHearts) {
       heart.addEventListener("click", (event) => {
-        event.target.classList.toggle("fa-solid");
+        heart.classList.toggle("fa-solid");
+        
+        let nbLikes = heart.getAttribute("data-nb-likes");
+        // création d'une nouvelle variable qui va via le getAttribute nous renvoyer les likes par carte qui étaient dans notre setAtribute et l'associé à notre a chaque icon de coeur (si on console.log on retrouve en click le nombre de likes existants)
+        
+        if (heart.classList.contains('fa-solid'))
+          nbLikes++;
+        else
+          nbLikes--;
+        // Par la suite on faite un conditionnel pour ajouter +1 ou -1 lorsqu'on click sur le coeur par contre on peut bien ajouter mais pb pour soustraire car prend la valeur initiale et non la valeur avec le like en plus 
+  
+        heart.setAttribute('data-nb-likes', nbLikes);
+        // on garde le nombre avec le like en plus avant soustraire en attribuant à heart le nombre de likes(moins bien compris cette partie)
+  
+        const heartSection = heart.parentNode.parentNode;
+  
+        const txtToEdit = heartSection.querySelector('.txt .like-txt .nb-likes');
+        txtToEdit.innerText = nbLikes;
       });
     }
   
@@ -206,8 +231,7 @@ const handleFeedEvent = () => {
 
             newTodo.innerText = textInput;
             todolist.appendChild(newTodo);
-            textInput.value = "";
-
+            form.firstElementChild.value = "";
         };
       }
     };
