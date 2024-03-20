@@ -23,7 +23,7 @@
 const cardsData = [
   {
     img: "/assets-projet-wild-gram/photos-profile-coline/img-1.jpg",
-    heartIcon: "fa-regular fa-heart",
+    heartIcon: "fa-regular fa-heart fa-flip",  
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
     likeTxt: "Aimé par Yann et 3 autres personnes",
