@@ -259,45 +259,6 @@ const handleCardEvent = () => {
   }
 
   const allForms = document.querySelectorAll(".form");
- 
-
-//   for (const input of allInputs) {
-//     input.onsubmit = function (event) {
-//       //   console.log("[EVENT]", event);
-//       //   console.log("[THIS]", this);
-//       event.preventDefault();
-//       //   console.log(input);
-//       const newTodo = document.createElement("li");
-
-//       const inputValue = this.elements["input"].value;
-//       // newTodo.innerHTML = event.target.value;
-//       this.nextElementSibling.appendChild(newTodo);
-//       newTodo.innerText = inputValue;
-//       inputValue = "";
-//       //   textInput.value = "";
-
-//       console.log(newTodo);
-//     };
-//   }
-//   for (const input of allInputs) {
-//     input.onsubmit = function (event) {
-//       //   console.log("[EVENT]", event);
-//       //   console.log("[THIS]", this);
-//       event.preventDefault();
-//       //   console.log(input);
-//       const newTodo = document.createElement("li");
-
-//       const inputValue = this.elements["input"].value;
-//       // newTodo.innerHTML = event.target.value;
-//       this.nextElementSibling.appendChild(newTodo);
-//       newTodo.innerText = inputValue;
-//       inputValue = "";
-//       //   textInput.value = "";
-
-//       console.log(newTodo);
-//     };
-//   }
-
   for (const form of allForms) {
     form.onsubmit = function (event) {
       event.preventDefault();
@@ -344,3 +305,44 @@ cardMultipliyer();
             </ul>
         </section>
     </div> -->*/
+
+
+
+
+
+//   for (const input of allInputs) {
+//     input.onsubmit = function (event) {
+//       //   console.log("[EVENT]", event);
+//       //   console.log("[THIS]", this);
+//       event.preventDefault();
+//       //   console.log(input);
+//       const newTodo = document.createElement("li");
+
+//       const inputValue = this.elements["input"].value;
+//       // newTodo.innerHTML = event.target.value;
+//       this.nextElementSibling.appendChild(newTodo);
+//       newTodo.innerText = inputValue;
+//       inputValue = "";
+//       //   textInput.value = "";
+
+//       console.log(newTodo);
+//     };
+//   }
+//   for (const input of allInputs) {
+//     input.onsubmit = function (event) {
+//       //   console.log("[EVENT]", event);
+//       //   console.log("[THIS]", this);
+//       event.preventDefault();
+//       //   console.log(input);
+//       const newTodo = document.createElement("li");
+
+//       const inputValue = this.elements["input"].value;
+//       // newTodo.innerHTML = event.target.value;
+//       this.nextElementSibling.appendChild(newTodo);
+//       newTodo.innerText = inputValue;
+//       inputValue = "";
+//       //   textInput.value = "";
+
+//       console.log(newTodo);
+//     };
+//   }

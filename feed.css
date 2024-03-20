@@ -78,7 +78,7 @@ input {
     grid-template-rows: 1fr 1fr 1fr;
     align-items: center;
 }
-.bloc{
+/* .bloc{
     margin-top: 10%;
     box-shadow: 2px 2px 5px #ccc;
     margin-left: 3%;
@@ -111,7 +111,7 @@ input {
 }
 #card-icons, .txt{
     margin-left: 5%;
-}
+} */
 section .suggestions-bar {
     border-left: 2px solid #ccc;
     margin-top: 10%;
