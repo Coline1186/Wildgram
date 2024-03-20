@@ -22,7 +22,7 @@
 
 const cardsData = [
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-1.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-1.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -31,7 +31,7 @@ const cardsData = [
     id: 1,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-2.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-2.JPG",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -40,7 +40,7 @@ const cardsData = [
     id: 2,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-3-remplacement.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-3-remplacement.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -49,7 +49,7 @@ const cardsData = [
     id: 3,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-4.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-4.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -58,7 +58,7 @@ const cardsData = [
     id: 4,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-5.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-5.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -67,7 +67,7 @@ const cardsData = [
     id: 5,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-6.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-6.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -76,7 +76,7 @@ const cardsData = [
     id: 6,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-7.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-7.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -85,7 +85,7 @@ const cardsData = [
     id: 7,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-8.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-8.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -94,7 +94,7 @@ const cardsData = [
     id: 8,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-9.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-9.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -103,7 +103,7 @@ const cardsData = [
     id: 9,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-10.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-10.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -112,7 +112,7 @@ const cardsData = [
     id: 10,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-11-remplacement.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-11-remplacement.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -121,7 +121,7 @@ const cardsData = [
     id: 11,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-12.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-12.JPG",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
