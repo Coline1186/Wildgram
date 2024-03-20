@@ -108,6 +108,9 @@ form.form{
    border-radius: 0.3rem;  
     width: 40%;
 }
+.card-container #card-icons{
+    width: 55%;
+}
 section{
     display: flex;
     justify-content: space-around;
