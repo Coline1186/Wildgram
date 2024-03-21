@@ -194,7 +194,7 @@ div>#titre {
 }
 form {
     margin-left: 6%;
-    width: 42%;
+    width: 64%;
 }
 .input-txt {
     width: 70%;
@@ -208,7 +208,7 @@ form {
    font-size: 1rem;
    border: 1px solid black;
    border-radius: 0.3rem;  
-   margin-left: 4%;
+   margin-left: 1%;
 }
 .list {
     list-style-type: none;
