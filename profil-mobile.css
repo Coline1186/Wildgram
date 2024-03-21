@@ -93,8 +93,8 @@ margin-right: 0;
 
 .img-container {
     /* object-fit: cover; */
-    width: 80%;
-    height: 50%;
+    width: 230px;
+    height: 60%;
 }
 
 .card-img {
@@ -104,23 +104,25 @@ object-fit: fill;
 
 .card-container {
     max-width: 70%;
-    max-height: 23rem;
+    max-height: 20rem;
 }
 .card-section {
-    margin-top: 3%;
-    margin-left: 4rem;
+    /* margin-top: 3%; */
+    margin-left: 10px;
 }
 form.form{
     display: flex;
     width: auto;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .input-send {
    margin-top: 0.3rem;
    font-size: 0.6rem;
    border: 1px solid black;
    border-radius: 0.3rem;  
-    width: 40%;
+    width: 29%;
+    margin-left: 2%;
+
 }
 .card-container #card-icons{
     width: 36%;

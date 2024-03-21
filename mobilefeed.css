@@ -83,7 +83,11 @@ ul.list{
     width: 45%;
 }
 form{
-    width:80%;
+    width:90%;
+}
+
+.input-send {
+    margin-left: 1%;
 }
 footer{
     margin: 7rem 0rem;
