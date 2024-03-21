@@ -1,25 +1,3 @@
-// function handleEvents() {
-//     const textInput = document.querySelector('.input-txt');
-//     const form = document.querySelector('#form');
-//     const todolist = document.querySelector('.list');
-
-//     form.onsubmit = (event) => {
-//         event.preventDefault();
-
-//         const newTodo = document.createElement("li");
-//         newTodo.innerHTML = textInput.value;
-//         todolist.appendChild(newTodo);
-//         textInput.value = "";
-//     }
-
-//     const likeButton = document.querySelector(".card-container #card-icons i.fa-heart")
-
-//     likeButton.addEventListener('click', (event) => {
-//         event.target.classList.toggle('fa-solid');
-
-//     })
-// }
-
 const cardsData = [
   {
     img: "assets-projet-wild-gram/photos-profile-coline/img-1.jpg",
@@ -132,7 +110,24 @@ const cardsData = [
   },
 ];
 
-const names = ['Raphael', 'Léa', 'Yazid', 'Alexandre', 'Vincent', 'Erwan', 'Mika', 'Yann', 'Paul', 'Mathilde', 'Lucie', 'Mewen', 'Aude', 'Emmanuelle', 'Tidus', 'Michaël']
+const names = [
+  "Raphael",
+  "Léa",
+  "Yazid",
+  "Alexandre",
+  "Vincent",
+  "Erwan",
+  "Mika",
+  "Yann",
+  "Paul",
+  "Mathilde",
+  "Lucie",
+  "Mewen",
+  "Aude",
+  "Emmanuelle",
+  "Tidus",
+  "Mickaël",
+];
 // création d'un nouveau tableau avec diffrents prénoms que l'on va ajouter dans notre like-txt
 
 // const cardsSection = document.querySelector('.card-list');
@@ -199,8 +194,8 @@ const cardMultipliyer = () => {
     heartIcon.classList.add("fa-regular");
     heartIcon.classList.add("fa-heart");
     heartIcon.setAttribute("data-nb-likes", object.likes),
-    // on crée un nouvel attribut dans notre balise heart qui permet de récuprer le nombre de likes (depuis le tableau d'objet) existant sur chaque carte et qui a pour nom 'data-nb-likes'
-    cardIcons.appendChild(heartIcon);
+      // on crée un nouvel attribut dans notre balise heart qui permet de récuprer le nombre de likes (depuis le tableau d'objet) existant sur chaque carte et qui a pour nom 'data-nb-likes'
+      cardIcons.appendChild(heartIcon);
 
     const commentIcon = document.createElement("i");
     commentIcon.classList.add("fa-regular");
@@ -219,9 +214,10 @@ const cardMultipliyer = () => {
     const likeTxt = document.createElement("p");
     likeTxt.classList.add("like-txt");
     const name = names[Math.floor(Math.random() * names.length)];
-    // afin d'utiliser le tableau de prénoms on génére aléatoirement un nombre que renvoie un index différent pour chaque carte 
+    // afin d'utiliser le tableau de prénoms on génére aléatoirement un nombre que renvoie un index différent pour chaque carte
     likeTxt.innerHTML = `Aimé par ${name} et <span class="nb-likes">${object.likes}</span> autre(s) personne(s)`;
-    // Après avoir récupéré le nombre de likes existants puis généré des prénoms différents par carte on utilise innerHtml pour remplacer le contenue de l'élément. On utilse la méthode des backtik afin de réécrire notre liketxt (supprimé de notre objet)  avec le bon nom et nombre de likes selon chaque carte. On place bien le nombre de likes dans une nouvelle balise span à l'intérieur du <p> afin d'avoir accès au nombre et pouvoir ajouter ou enlever 1
+    // Après avoir récupéré le nombre de likes existants puis généré des prénoms différents par carte on utilise innerHtml pour
+    // remplacer le contenue de l'élément. On utilse la méthode des backtik afin de réécrire notre liketxt (supprimé de notre objet)  avec le bon nom et nombre de likes selon chaque carte. On place bien le nombre de likes dans une nouvelle balise span à l'intérieur du <p> afin d'avoir accès au nombre et pouvoir ajouter ou enlever 1
     postTxt.appendChild(likeTxt);
 
     const description = document.createElement("p");
@@ -238,7 +234,7 @@ const cardMultipliyer = () => {
     inputTxt.name = "input";
     inputTxt.placeholder = "Ecris ton commentaire";
     inputTxt.type = "text";
-    inputTxt.value = ""; 
+    inputTxt.value = "";
     form.appendChild(inputTxt);
 
     const inputSend = document.createElement("input");
@@ -267,45 +263,40 @@ const handleCardEvent = () => {
 
       let nbLikes = heart.getAttribute("data-nb-likes");
       // création d'une nouvelle variable qui va via le getAttribute nous renvoyer les likes par carte qui étaient dans notre setAtribute et l'associé à notre a chaque icon de coeur (si on console.log on retrouve en click le nombre de likes existants)
-      
-      if (heart.classList.contains('fa-solid'))
-        nbLikes++;
-      else
-        nbLikes--;
-      // Par la suite on faite un conditionnel pour ajouter +1 ou -1 lorsqu'on click sur le coeur par contre on peut bien ajouter mais pb pour soustraire car prend la valeur initiale et non la valeur avec le like en plus 
 
-      heart.setAttribute('data-nb-likes', nbLikes);
+      if (heart.classList.contains("fa-solid")) nbLikes++;
+      else nbLikes--;
+      // Par la suite on faite un conditionnel pour ajouter +1 ou -1 lorsqu'on click sur le coeur par contre on peut bien ajouter mais pb pour soustraire car prend la valeur initiale et non la valeur avec le like en plus
+
+      heart.setAttribute("data-nb-likes", nbLikes);
       // on garde le nombre avec le like en plus avant soustraire en attribuant à heart le nombre de likes(moins bien compris cette partie)
 
       const heartSection = heart.parentNode.parentNode;
+      // on crée une nouvelles variable qui nous permet d'accèder via le parentNode à ma section ou je trouve le text contenant mes likes mais dans le parent
 
-      const txtToEdit = heartSection.querySelector('.txt .like-txt .nb-likes');
+      const txtToEdit = heartSection.querySelector(".txt .like-txt .nb-likes");
+      // dès qu'on à accès à notre section on cherche donc à selectioner notre textd de like mais plus précis le span créer avant ou on à sauvgardé le nombre de likes par carte
       txtToEdit.innerText = nbLikes;
+      // En fin on utilise le innerText pour modifier le nombre qui s'affiche sur le like-txt lorque l'on click sur le coeur.
     });
   }
 
   const allForms = document.querySelectorAll(".form");
-  
+
   for (const form of allForms) {
     form.onsubmit = function (event) {
       event.preventDefault();
 
-      
       const todolist = form.nextElementSibling;
       const textInput = form.firstElementChild.value;
       const newTodo = document.createElement("li");
-      
+
       newTodo.innerText = textInput;
       todolist.appendChild(newTodo);
       form.firstElementChild.value = "";
-      
-      
     };
   }
-  
-
-
-}
+};
 
 cardMultipliyer();
 
