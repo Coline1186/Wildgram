@@ -86,8 +86,9 @@ ul.list{
 .card-container #card-icons{
     width: 45%;
 }
-form{
-    width:90%;
+form.form{
+    width:auto;
+    display: flex;
 }
 
 .input-send {
