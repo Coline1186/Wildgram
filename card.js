@@ -1,135 +1,134 @@
-// function handleEvents() {
-//     const textInput = document.querySelector('.input-txt');
-//     const form = document.querySelector('#form');
-//     const todolist = document.querySelector('.list');
-
-//     form.onsubmit = (event) => {
-//         event.preventDefault();
-
-//         const newTodo = document.createElement("li");
-//         newTodo.innerHTML = textInput.value;
-//         todolist.appendChild(newTodo);
-//         textInput.value = "";
-//     }
-
-//     const likeButton = document.querySelector(".card-container #card-icons i.fa-heart")
-
-//     likeButton.addEventListener('click', (event) => {
-//         event.target.classList.toggle('fa-solid');
-
-//     })
-// }
-
 const cardsData = [
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-1.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-1.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Yann et 3 autres personnes",
+    likes: 3,
+    // supression du like-txt puis ajout de likes avec le nombre de likes existants par carte à ajouter au like txt
     description: "Live laugh love #live",
     id: 1,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-2.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-2.JPG",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Sarah et 5 autres personnes",
+    likes: 5,
     description: "Sunset vibes 🌅 #sunset",
     id: 2,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-3-remplacement.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-3-remplacement.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Maxime et 2 autres personnes",
+    likes: 2,
     description: "Exploring the city streets #citylife",
     id: 3,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-4.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-4.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Emma et 7 autres personnes",
+    likes: 7,
     description: "Cozy evenings with a good book 📚 #reading",
     id: 4,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-5.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-5.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Lucas et 4 autres personnes",
+    likes: 4,
     description: "Nature's beauty at its best 🌿 #nature",
     id: 5,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-6.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-6.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Marie et 3 autres personnes",
+    likes: 3,
     description: "Morning coffee delights ☕️ #coffee",
     id: 6,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-7.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-7.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Hugo et 6 autres personnes",
+    likes: 6,
     description: "Adventures await 🌎 #adventure",
     id: 7,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-8.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-8.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Chloé et 2 autres personnes",
+    likes: 2,
     description: "Chasing sunsets 🌇 #sunset",
     id: 8,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-9.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-9.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Thomas et 4 autres personnes",
+    likes: 4,
     description: "In love with this view 😍 #view",
     id: 9,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-10.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-10.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Léa et 3 autres personnes",
+    likes: 3,
     description: "Weekend vibes 🎉 #weekend",
     id: 10,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-11-remplacement.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-11-remplacement.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Nathan et 1 autre personne",
+    likes: 1,
     description: "Exploring new horizons 🌄 #explore",
     id: 11,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-12.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-12.JPG",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
-    likeTxt: "Aimé par Laura et 8 autres personnes",
+    likes: 8,
     description: "Music and good vibes 🎶 #music",
     id: 12,
   },
 ];
+
+const names = [
+  "Raphael",
+  "Léa",
+  "Yazid",
+  "Alexandre",
+  "Vincent",
+  "Erwan",
+  "Mika",
+  "Yann",
+  "Paul",
+  "Mathilde",
+  "Lucie",
+  "Mewen",
+  "Aude",
+  "Emmanuelle",
+  "Tidus",
+  "Mickaël",
+];
+// création d'un nouveau tableau avec diffrents prénoms que l'on va ajouter dans notre like-txt
 
 // const cardsSection = document.querySelector('.card-list');
 
@@ -194,7 +193,9 @@ const cardMultipliyer = () => {
     const heartIcon = document.createElement("i");
     heartIcon.classList.add("fa-regular");
     heartIcon.classList.add("fa-heart");
-    cardIcons.appendChild(heartIcon);
+    heartIcon.setAttribute("data-nb-likes", object.likes),
+      // on crée un nouvel attribut dans notre balise heart qui permet de récuprer le nombre de likes (depuis le tableau d'objet) existant sur chaque carte et qui a pour nom 'data-nb-likes'
+      cardIcons.appendChild(heartIcon);
 
     const commentIcon = document.createElement("i");
     commentIcon.classList.add("fa-regular");
@@ -212,7 +213,11 @@ const cardMultipliyer = () => {
 
     const likeTxt = document.createElement("p");
     likeTxt.classList.add("like-txt");
-    likeTxt.innerHTML = object.likeTxt;
+    const name = names[Math.floor(Math.random() * names.length)];
+    // afin d'utiliser le tableau de prénoms on génére aléatoirement un nombre que renvoie un index différent pour chaque carte
+    likeTxt.innerHTML = `Aimé par ${name} et <span class="nb-likes">${object.likes}</span> autre(s) personne(s)`;
+    // Après avoir récupéré le nombre de likes existants puis généré des prénoms différents par carte on utilise innerHtml pour
+    // remplacer le contenue de l'élément. On utilse la méthode des backtik afin de réécrire notre liketxt (supprimé de notre objet)  avec le bon nom et nombre de likes selon chaque carte. On place bien le nombre de likes dans une nouvelle balise span à l'intérieur du <p> afin d'avoir accès au nombre et pouvoir ajouter ou enlever 1
     postTxt.appendChild(likeTxt);
 
     const description = document.createElement("p");
@@ -254,54 +259,33 @@ const handleCardEvent = () => {
 
   for (const heart of allHearts) {
     heart.addEventListener("click", (event) => {
-      event.target.classList.toggle("fa-solid");
+      heart.classList.toggle("fa-solid");
+
+      let nbLikes = heart.getAttribute("data-nb-likes");
+      // création d'une nouvelle variable qui va via le getAttribute nous renvoyer les likes par carte qui étaient dans notre setAtribute et l'associé à notre a chaque icon de coeur (si on console.log on retrouve en click le nombre de likes existants)
+
+      if (heart.classList.contains("fa-solid")) nbLikes++;
+      else nbLikes--;
+      // Par la suite on faite un conditionnel pour ajouter +1 ou -1 lorsqu'on click sur le coeur par contre on peut bien ajouter mais pb pour soustraire car prend la valeur initiale et non la valeur avec le like en plus
+
+      heart.setAttribute("data-nb-likes", nbLikes);
+      // on garde le nombre avec le like en plus avant soustraire en attribuant à heart le nombre de likes(moins bien compris cette partie)
+
+      const heartSection = heart.parentNode.parentNode;
+      // on crée une nouvelles variable qui nous permet d'accèder via le parentNode à ma section ou je trouve le text contenant mes likes mais dans le parent
+
+      const txtToEdit = heartSection.querySelector(".txt .like-txt .nb-likes");
+      // dès qu'on à accès à notre section on cherche donc à selectioner notre textd de like mais plus précis le span créer avant ou on à sauvgardé le nombre de likes par carte
+      txtToEdit.innerText = nbLikes;
+      // En fin on utilise le innerText pour modifier le nombre qui s'affiche sur le like-txt lorque l'on click sur le coeur.
     });
   }
 
   const allForms = document.querySelectorAll(".form");
- 
-
-//   for (const input of allInputs) {
-//     input.onsubmit = function (event) {
-//       //   console.log("[EVENT]", event);
-//       //   console.log("[THIS]", this);
-//       event.preventDefault();
-//       //   console.log(input);
-//       const newTodo = document.createElement("li");
-
-//       const inputValue = this.elements["input"].value;
-//       // newTodo.innerHTML = event.target.value;
-//       this.nextElementSibling.appendChild(newTodo);
-//       newTodo.innerText = inputValue;
-//       inputValue = "";
-//       //   textInput.value = "";
-
-//       console.log(newTodo);
-//     };
-//   }
-//   for (const input of allInputs) {
-//     input.onsubmit = function (event) {
-//       //   console.log("[EVENT]", event);
-//       //   console.log("[THIS]", this);
-//       event.preventDefault();
-//       //   console.log(input);
-//       const newTodo = document.createElement("li");
-
-//       const inputValue = this.elements["input"].value;
-//       // newTodo.innerHTML = event.target.value;
-//       this.nextElementSibling.appendChild(newTodo);
-//       newTodo.innerText = inputValue;
-//       inputValue = "";
-//       //   textInput.value = "";
-
-//       console.log(newTodo);
-//     };
-//   }
 
   for (const form of allForms) {
     form.onsubmit = function (event) {
       event.preventDefault();
-
 
       const todolist = form.nextElementSibling;
       const textInput = form.firstElementChild.value;
@@ -309,8 +293,7 @@ const handleCardEvent = () => {
 
       newTodo.innerText = textInput;
       todolist.appendChild(newTodo);
-      textInput.value = "";
-
+      form.firstElementChild.value = "";
     };
   }
 };
@@ -334,7 +317,7 @@ cardMultipliyer();
             <form class="form" action="">
                 <input name="input" class="input-txt" type="text"
                 placeholder="Ecris ton commentaire"
-                value="">
+                value="" id= 'text'>
                 <input class="input-send" type="submit" value="Envoyer" id="">
             </form>
             <ul class="list">
@@ -344,3 +327,40 @@ cardMultipliyer();
             </ul>
         </section>
     </div> -->*/
+
+    //   for (const input of allInputs) {
+    //     input.onsubmit = function (event) {
+    //       //   console.log("[EVENT]", event);
+    //       //   console.log("[THIS]", this);
+    //       event.preventDefault();
+    //       //   console.log(input);
+    //       const newTodo = document.createElement("li");
+    
+    //       const inputValue = this.elements["input"].value;
+    //       // newTodo.innerHTML = event.target.value;
+    //       this.nextElementSibling.appendChild(newTodo);
+    //       newTodo.innerText = inputValue;
+    //       inputValue = "";
+    //       //   textInput.value = "";
+    
+    //       console.log(newTodo);
+    //     };
+    //   }
+    //   for (const input of allInputs) {
+    //     input.onsubmit = function (event) {
+    //       //   console.log("[EVENT]", event);
+    //       //   console.log("[THIS]", this);
+    //       event.preventDefault();
+    //       //   console.log(input);
+    //       const newTodo = document.createElement("li");
+    
+    //       const inputValue = this.elements["input"].value;
+    //       // newTodo.innerHTML = event.target.value;
+    //       this.nextElementSibling.appendChild(newTodo);
+    //       newTodo.innerText = inputValue;
+    //       inputValue = "";
+    //       //   textInput.value = "";
+    
+    //       console.log(newTodo);
+    //     };
+    //   }
