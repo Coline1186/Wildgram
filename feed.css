@@ -221,4 +221,7 @@ form {
     overflow: scroll;
     scrollbar-width: none;
 }
+footer{
+    margin : 1.5rem 0rem;
+}
 
