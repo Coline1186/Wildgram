@@ -62,7 +62,7 @@ main .droite .icones p{
     bottom: 0; /* Placer la barre latérale en bas de la fenêtre */
     top: auto; /* Réinitialiser la position en haut */
     display: block;
-    /*background-color: #ccc;*/
+    background-color: #ccc;
     padding-left: 5%;
 }
 .nav-links p{
@@ -84,4 +84,55 @@ main .droite .icones p{
 }
 .nav-links li {
     margin-right: 15px; /* Ajouter un peu d'espace entre les liens */
+}
+
+.card-list {
+margin-right: 0;
+
+}
+
+.img-container {
+    /* object-fit: cover; */
+    width: 80%;
+    height: 50%;
+}
+
+.card-img {
+object-fit: fill;
+
+}
+
+.card-container {
+    max-width: 70%;
+    max-height: 23rem;
+}
+.card-section {
+    margin-top: 3%;
+    margin-left: 4rem;
+}
+
+
+
+form.form{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+.input-send {
+   margin-top: 0.3rem;
+   font-size: 0.6rem;
+   border: 1px solid black;
+   border-radius: 0.3rem;  
+    width: 40%;
+}
+.card-container #card-icons{
+    width: 36%;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    margin: 4rem 0rem;
 }

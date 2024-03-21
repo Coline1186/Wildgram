@@ -11,12 +11,6 @@ body {
     background-color: #F0F0F0;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-   
-}
-
 .card-container {
     background-color: white;
     border-radius: 1rem;
@@ -25,9 +19,9 @@ body {
     align-items: center ;
     padding: 8px;
     max-height: 100%;
-    max-width: 40%;
+    max-width: 60%;
     box-shadow: 0.20rem 0.20rem #A306B6;
-    margin-top: 5%;
+    margin-top: 13%;
 }
 
 .card-head {

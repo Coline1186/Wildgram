@@ -1,29 +1,7 @@
-// function handleEvents() {
-//     const textInput = document.querySelector('.input-txt');
-//     const form = document.querySelector('#form');
-//     const todolist = document.querySelector('.list');
-
-//     form.onsubmit = (event) => {
-//         event.preventDefault();
-
-//         const newTodo = document.createElement("li");
-//         newTodo.innerHTML = textInput.value;
-//         todolist.appendChild(newTodo);
-//         textInput.value = "";
-//     }
-
-//     const likeButton = document.querySelector(".card-container #card-icons i.fa-heart")
-
-//     likeButton.addEventListener('click', (event) => {
-//         event.target.classList.toggle('fa-solid');
-
-//     })
-// }
-
 const cardsData = [
   {
     img: "/assets-projet-wild-gram/photos-profile-coline/img-1.jpg",
-    heartIcon: "fa-regular fa-heart fa-flip",
+    heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
     likes: 3,
@@ -32,7 +10,7 @@ const cardsData = [
     id: 1,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-2.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-2.JPG",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -41,7 +19,7 @@ const cardsData = [
     id: 2,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-3-remplacement.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-3-remplacement.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -50,7 +28,7 @@ const cardsData = [
     id: 3,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-4.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-4.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -59,7 +37,7 @@ const cardsData = [
     id: 4,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-5.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-5.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -68,7 +46,7 @@ const cardsData = [
     id: 5,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-6.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-6.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -77,7 +55,7 @@ const cardsData = [
     id: 6,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-7.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-7.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -86,7 +64,7 @@ const cardsData = [
     id: 7,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-8.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-8.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -95,7 +73,7 @@ const cardsData = [
     id: 8,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-9.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-9.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -104,7 +82,7 @@ const cardsData = [
     id: 9,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-10.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-10.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -113,7 +91,7 @@ const cardsData = [
     id: 10,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-11-remplacement.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-11-remplacement.jpg",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -122,7 +100,7 @@ const cardsData = [
     id: 11,
   },
   {
-    img: "/assets-projet-wild-gram/photos-profile-coline/img-12.jpg",
+    img: "assets-projet-wild-gram/photos-profile-coline/img-12.JPG",
     heartIcon: "fa-regular fa-heart",
     commentIcon: "fa-regular fa-comment",
     sendIcon: "fa-regular fa-paper-plane",
@@ -148,7 +126,7 @@ const names = [
   "Aude",
   "Emmanuelle",
   "Tidus",
-  "Michaël",
+  "Mickaël",
 ];
 // création d'un nouveau tableau avec diffrents prénoms que l'on va ajouter dans notre like-txt
 
@@ -238,7 +216,8 @@ const cardMultipliyer = () => {
     const name = names[Math.floor(Math.random() * names.length)];
     // afin d'utiliser le tableau de prénoms on génére aléatoirement un nombre que renvoie un index différent pour chaque carte
     likeTxt.innerHTML = `Aimé par ${name} et <span class="nb-likes">${object.likes}</span> autre(s) personne(s)`;
-    // Après avoir récupéré le nombre de likes existants puis généré des prénoms différents par carte on utilise innerHtml pour remplacer le contenue de l'élément. On utilse la méthode des backtik afin de réécrire notre liketxt (supprimé de notre objet)  avec le bon nom et nombre de likes selon chaque carte. On place bien le nombre de likes dans une nouvelle balise span à l'intérieur du <p> afin d'avoir accès au nombre et pouvoir ajouter ou enlever 1
+    // Après avoir récupéré le nombre de likes existants puis généré des prénoms différents par carte on utilise innerHtml pour
+    // remplacer le contenue de l'élément. On utilse la méthode des backtik afin de réécrire notre liketxt (supprimé de notre objet)  avec le bon nom et nombre de likes selon chaque carte. On place bien le nombre de likes dans une nouvelle balise span à l'intérieur du <p> afin d'avoir accès au nombre et pouvoir ajouter ou enlever 1
     postTxt.appendChild(likeTxt);
 
     const description = document.createElement("p");
@@ -348,3 +327,40 @@ cardMultipliyer();
             </ul>
         </section>
     </div> -->*/
+
+    //   for (const input of allInputs) {
+    //     input.onsubmit = function (event) {
+    //       //   console.log("[EVENT]", event);
+    //       //   console.log("[THIS]", this);
+    //       event.preventDefault();
+    //       //   console.log(input);
+    //       const newTodo = document.createElement("li");
+    
+    //       const inputValue = this.elements["input"].value;
+    //       // newTodo.innerHTML = event.target.value;
+    //       this.nextElementSibling.appendChild(newTodo);
+    //       newTodo.innerText = inputValue;
+    //       inputValue = "";
+    //       //   textInput.value = "";
+    
+    //       console.log(newTodo);
+    //     };
+    //   }
+    //   for (const input of allInputs) {
+    //     input.onsubmit = function (event) {
+    //       //   console.log("[EVENT]", event);
+    //       //   console.log("[THIS]", this);
+    //       event.preventDefault();
+    //       //   console.log(input);
+    //       const newTodo = document.createElement("li");
+    
+    //       const inputValue = this.elements["input"].value;
+    //       // newTodo.innerHTML = event.target.value;
+    //       this.nextElementSibling.appendChild(newTodo);
+    //       newTodo.innerText = inputValue;
+    //       inputValue = "";
+    //       //   textInput.value = "";
+    
+    //       console.log(newTodo);
+    //     };
+    //   }
