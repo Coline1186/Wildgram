@@ -85,7 +85,10 @@ main .droite .icones p{
 .nav-links li {
     margin-right: 15px; /* Ajouter un peu d'espace entre les liens */
 }
-
+.nav-links a {
+    display: flex;
+    justify-content: center;
+}
 .card-list {
 margin-right: 0;
 
