@@ -49,18 +49,22 @@ header .param-responsive p{
     display: none;
 }
 .nav-links .loupe-responsive{
+    margin: 0;
     display: block;
 }
-.nav-links {
+ul.nav-links {
     display: flex;
     flex-direction: row; /* Afficher les liens horizontalement */
-    justify-content: space-around;
+    align-items: center;
 }
 .nav-links li {
     margin-right: 15px; /* Ajouter un peu d'espace entre les liens */
 }
+.nav-links a {
+    display: flex;
+    justify-content: center;
+}
 ul.list{
-    
     padding-left: 6%;
 }
 .img-container {
