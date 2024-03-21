@@ -134,6 +134,7 @@ const feedCopy = () => {
     const heartIcon = document.createElement("i");
     heartIcon.classList.add("fa-regular");
     heartIcon.classList.add("fa-heart");
+    heartIcon.classList.add("fa-2xl");
     heartIcon.setAttribute("data-nb-likes", object.likes),
     // on crée un nouvel attribut dans notre balise heart qui permet de récuprer le nombre de likes (depuis le tableau d'objet) existant sur chaque carte et qui a pour nom 'data-nb-likes'
     cardIcons.appendChild(heartIcon);
@@ -141,11 +142,13 @@ const feedCopy = () => {
     const commentIcon = document.createElement("i");
     commentIcon.classList.add("fa-regular");
     commentIcon.classList.add("fa-comment");
+    commentIcon.classList.add("fa-2xl");
     cardIcons.appendChild(commentIcon);
 
     const sendIcon = document.createElement("i");
     sendIcon.classList.add("fa-regular");
     sendIcon.classList.add("fa-paper-plane");
+    sendIcon.classList.add("fa-2xl");
     cardIcons.appendChild(sendIcon);
 
     const text = document.createElement("div");

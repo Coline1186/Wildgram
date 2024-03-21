@@ -24,6 +24,7 @@ header{
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    margin-right: 8%;
 }
 header .param-responsive{
     display: none;
@@ -67,51 +68,12 @@ li.loupe-responsive{
 }
 #searchbar {
     height: 1.87rem; /*Hauteur de l'input*/
-    width: 50%;
+    width: 55%;
     border-radius: 1rem;
     border: 2px solid #ccc; /*Bordure de l'input */
     background-color: #ebe9e9;  
+    margin-left: 4%;
 }
-/* .feed{
-    display: grid;
-    margin-right: 35%;
-    grid-template-rows: 1fr 1fr 1fr;
-    align-items: center;
-} */
-/* .bloc{
-    margin-top: 10%;
-    box-shadow: 2px 2px 5px #ccc;
-    margin-left: 3%;
-}
-.bloc span img{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    box-shadow: 3px 2px 5px var(--second-color);
-    margin-right: 5%;
-    margin-left: 3%;
-}
-.bloc span{
-    display: flex;
-    align-items: center;
-}
-.bloc h2{
-    font-weight: 180;
-    text-shadow: 1px 1px 2px var(--second-color);
-}
-.bloc img{
-    margin-left: 25%;
-    max-width: 100%;
-    height: 400px;  
-}
-.bloc video{
-    margin-left: 25%;
-    max-width: 100%;
-    height: 400px;
-}
-#card-icons, .txt{
-    margin-left: 5%;
-} */
 .suggestions-bar {
     border-left: 2px solid #ccc;
     margin-top: 10%;
@@ -135,6 +97,7 @@ li.loupe-responsive{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-left: 2%;
 }
 
 .suggestions-bar>div>a {
@@ -150,4 +113,112 @@ div>#titre {
     flex-direction: row;
 }
 
-/* feed.js */
+/* feed-card.css */
+
+.card-container {
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    padding: 8px;
+    max-width: 65%;
+    box-shadow: 0.20rem 0.20rem #A306B6;
+    margin-top: 9%;
+}
+.card-head {
+    display: flex;
+    justify-content:left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.avatar-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    object-fit:cover;
+    margin-left: 0.5rem;
+}
+.card-container .card-head .userName {
+    text-shadow: 3px 2px 5px #A306B6;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.card-container #card-icons {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+    margin-left: 4%;
+}
+.card-container #card-icons i.fa-solid {
+    color: red;
+}
+.fa-regular {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-img {
+    width: 100%;
+    padding: 0;
+    border-radius: 0.65rem;
+    border: 1px solid black;
+}
+.img-container {
+    width: 90%;
+}
+.card-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.txt {
+    font-family: Lexend ;
+    font-size: 1rem;
+    margin-left: 6%;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+.like-txt {
+    margin-top: 0.13rem;
+    margin-bottom: 0.2rem;
+    font-family: var(--font-family);
+    font-weight: 900;
+}
+.description {
+    margin-top: 0;
+    margin-bottom: 0.13rem;
+}
+form {
+    margin-left: 6%;
+    width: 42%;
+}
+.input-txt {
+    width: 70%;
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+}
+.input-send {
+   margin-top: 0.3rem;
+   font-size: 1rem;
+   border: 1px solid black;
+   border-radius: 0.3rem;  
+   margin-left: 4%;
+}
+.list {
+    list-style-type: none;
+    padding-left: 2.65rem;
+    margin-top: 0.5rem;
+    font-family: Lexend;
+    font-size: 1.3rem;
+    height: 4rem;
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+

@@ -92,6 +92,7 @@ main .droite .icones p{
 }
 .card-container {
     max-width: 38%;
+    max-height: 300px;
 }
 .card-section {
     margin-top: 3%;
