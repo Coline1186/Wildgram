@@ -80,7 +80,7 @@ main .droite .icones p{
 .nav-links {
     display: flex;
     flex-direction: row; /* Afficher les liens horizontalement */
-    justify-content: space-around;
+    align-items: center;
 }
 .nav-links li {
     margin-right: 15px; /* Ajouter un peu d'espace entre les liens */
