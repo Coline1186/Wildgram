@@ -49,6 +49,8 @@ header #searchbar{
 }
 ul.nav-links{
     padding-left: 0;
+    margin-top: 0;
+    
 }
 .nav-links li{
     display: flex;
@@ -57,7 +59,7 @@ ul.nav-links{
     align-items: center;
 }
 .nav-links img{
-    max-width: 50%;
+    max-width: 40%;
     margin-top: 0.5rem;
 }
 .nav-links p{
@@ -193,7 +195,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: start;
-    margin-left: 1rem;
+    
     /* margin-top: 5px; */
 }
 

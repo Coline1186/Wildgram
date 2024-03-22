@@ -43,11 +43,13 @@ header .logo{
     position: fixed;
     top: 20%;
     left: 0;
-    padding: 0px 30px;
+    padding-right: 30px;
+    padding-left: 39px;
     border-right: 2px solid #ccc;
 }
 ul.nav-links{
     padding-left: 0;
+    margin-top: 0;
 }
 .nav-links li {
     display: flex;
@@ -56,7 +58,7 @@ ul.nav-links{
     align-items: center;
 }
 .nav-links img {
-    max-width: 55%;
+    max-width: 40%;
     margin-top: 0.5rem;
 }
 .nav-links p {

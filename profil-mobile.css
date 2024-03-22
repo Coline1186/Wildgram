@@ -2,7 +2,8 @@ header .logo{
     position: absolute;
     width: 20%;
     margin-left: 40%;
-    top:0;
+    /* top:0; */
+    margin-top: 1rem;
 }
 header .param-responsive{
     margin-left: 80%;

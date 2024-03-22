@@ -16,7 +16,7 @@ header .logo{
     position: absolute;
     width: 20%;
     margin-left: 40%;
-    top:0;
+    margin-top: 0.5rem;
 }
 header .param-responsive{
     margin-left: 80%;
@@ -56,6 +56,8 @@ ul.nav-links {
     display: flex;
     flex-direction: row; /* Afficher les liens horizontalement */
     align-items: center;
+    /* position: absolute;
+    z-index: 1; */
 }
 .nav-links li {
     margin-right: 15px; /* Ajouter un peu d'espace entre les liens */
@@ -75,13 +77,16 @@ ul.list{
 .card-img{
     width: 85%;
     margin-left: 7%;
+   
 }
+
 .card-container {
     margin-left: 5%;
     max-width: 90%;
 }
 .card-section {
-    margin-top: 3%;
+    margin-top: 0;
+    margin-left: 1rem;
 }
 .card-container #card-icons{
     width: 45%;
