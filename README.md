@@ -1,1 +1,1 @@
-# first-project
+# first-project in HTML, CSS, Javascript
